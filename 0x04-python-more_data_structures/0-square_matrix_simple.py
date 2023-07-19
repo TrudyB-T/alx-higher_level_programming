@@ -5,8 +5,8 @@ def square_matrix_simple(matrix=[]):
     for row in matrix:
         new_row = []
         for elmnt in row:
-            new_elmt = elmnt * elmt
-            new_row.apppend(new_elmnt)
+            new_elmnt = elmnt * elmnt
+            new_row.append(new_elmnt)
             print("{:d}".format(elmnt), end=' ' if elmnt != row[-1] else '')
         new_matrix.append(new_row)
         print()
