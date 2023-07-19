@@ -7,8 +7,6 @@ def square_matrix_simple(matrix=[]):
         for elmnt in row:
             new_elmnt = elmnt * elmnt
             new_row.append(new_elmnt)
-            print("{:d}".format(elmnt), end=' ' if elmnt != row[-1] else '')
         new_matrix.append(new_row)
-        print()
 
     return new_matrix
