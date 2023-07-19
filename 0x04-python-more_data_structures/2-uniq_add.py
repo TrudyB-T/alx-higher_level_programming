@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 def uniq_add(my_list=[]):
-    return sum(mylist[0:])
+    return sum(my_list[0:])
