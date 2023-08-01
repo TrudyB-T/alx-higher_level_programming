@@ -4,15 +4,16 @@
 
 class Square:
     """defines a square"""
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """ passing initial values to object
 
         Args:
             size (int): size of the square
+            position (int, int): position of the new square
 
         Attributes:
-
-            __size (int): size of the square
+                  __size (int): size of the square
+                  position (int, int): position of the new square
         """
         self.size = size
         self.position = position
