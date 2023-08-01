@@ -16,7 +16,7 @@ class Square:
         """
         self.size = size
 
-    @property 
+    @property
     def size(self):
         """ retrieve private instance attribute: size"""
         return self.__size
