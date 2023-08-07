@@ -55,13 +55,13 @@ class Rectangle:
 
     def perimeter(self):
         """ returns the perimiter of the rectangle"""
-        if self.__width is 0 or self.__height is 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
         return self.__width * 2 + self.__height * 2
 
     def __str__(self):
         """print the rectangle with the character #"""
-        if self.__width is 0 or self.__height is 0:
+        if self.__width == 0 or self.__height == 0:
             return ""
         return ("\n".join(["".join(["#" for m in range(self.__width)])
                 for n in range(self.__height)]))
