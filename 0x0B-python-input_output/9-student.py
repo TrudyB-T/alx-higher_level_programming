@@ -7,7 +7,7 @@ class Student:
 
     def __init__(self, first_name, last_name, age):
         """
-        Instantiate a new Student.
+        Instantiate a new Student
         
         Arguments:
         first_name (str): The first name of the student.
