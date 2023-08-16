@@ -29,7 +29,7 @@ class Student:
             return {j: getattr(self, j) for j in attrs if hasattr(self, j)}
         return self.__dict__
 
-     def reload_from_json(self, json):
+    def reload_from_json(self, json):
         """replaces all attributes of the Student instance
         Arguments:
         json (dict): The key/value of public attribute
