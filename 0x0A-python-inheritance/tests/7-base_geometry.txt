@@ -1,0 +1,78 @@
+The ``7-base_geometry`` module
+======================
+
+Importing the function from the module:
+        >>> BG = __import__("7-base_geometry").BaseGeometry
+
+Test module docstring:
+         >>> m = __import__("7-base_geometry").__doc__
+         >>> len(m) > 1
+         True
+
+Test class docstring:
+         >>> c = __import__("7-base_geometry").BaseGeometry.__doc__
+         >>> len(c) > 1
+         True
+
+Test method docstring:
+	 >>> mod1 = __import__("7-base_geometry").BaseGeometry.area.__doc__
+	 >>> len(mod1) > 1
+	 True
+	 >>> mod2 = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
+         >>> len(mod2) > 1
+         True
+
+Test area failure:
+	 >>> b = BG()
+	 >>> b.area()
+	 Traceback (most recent call last):
+	 ...
+	 Exception: area() is not implemented
+
+Test for  many arguments for area:
+	 >>> b.area(1)
+	 Traceback (most recent call last):
+         ...
+	 TypeError: area() takes 1 positional argument but 2 were given
+
+Test integer validator for passing integer:
+	 >>> b.integer_validator("integer", 1)
+
+Test integer == 0:
+	 >>> b.integer_validator("integer", 0)
+	 Traceback (most recent call last):
+         ...
+         ValueError: integer must be greater than 0
+
+Test integer < 0;
+	 >>> b.integer_validator("integer", -5)
+	 Traceback (most recent call last):
+         ...
+         ValueError: integer must be greater than 0
+
+Test for non-integer types:
+	 >>> b.integer_validator("bool", True)
+	 Traceback (most recent call last):
+         ...
+         TypeError: bool must be an integer
+	 >>> b.integer_validator("float", 1.5)
+         Traceback (most recent call last):
+         ...
+         TypeError: float must be an integer
+	 >>> b.integer_validator("complex", complex(1, 1))
+         Traceback (most recent call last):
+         ...
+         TypeError: complex must be an integer
+
+Test no arguments for integer_validator:
+	 >>> b.integer_validator()
+	 Traceback (most recent call last):
+         ...
+	 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+Test for only 1 argument to integer_validator:
+	 >>> b.integer_validator("integer")
+	 Traceback (most recent call last):
+         ...
+	 TypeError: integer_validator() missing 1 required positional argument: 'value'
+
