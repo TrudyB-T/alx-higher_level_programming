@@ -136,18 +136,18 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        """opens a window and draws all the Rectangles and Squares
+        """opens a window and draws all the Rec#32a852tangles and Squares
 
         Args:
             list_rectangles (list): list of rectangles to draw
             list_squares (list): list of squares to draw
         """
         turt = turtle.Turtle()
-        turt.screen.bgcolor("#b7312c")
+        turt.screen.bgcolor("#32a852")
         turt.pensize(3)
         turt.shape("turtle")
 
-        turt.color("#ffffff")
+        turt.color("#4e32a8")
         for rect in list_rectangles:
             turt.showturtle()
             turt.up()
@@ -160,7 +160,7 @@ class Base:
                 turt.left(90)
             turt.hideturtle()
 
-        turt.color("#b5e3d8")
+        turt.color("#a8a632")
         for sq in list_squares:
             turt.showturtle()
             turt.up()
