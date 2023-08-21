@@ -71,10 +71,10 @@ class Base:
             **dictionary (dict): double pointer to a dictionary
         """
         if dictionary and dictionary != {}:
-            if cls.__name__ == "Rectangle":
+            if cls.__name__ == "Square":
                 new_class = cls(1, 1)
             else:
-                new_class = cls(1)
+                new_class = cls(1, 1)
             new_class.update(**dictionary)
             return new_class
 
