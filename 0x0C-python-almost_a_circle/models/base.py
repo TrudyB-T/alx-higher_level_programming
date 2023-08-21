@@ -72,7 +72,7 @@ class Base:
         """
         if dictionary and dictionary != {}:
             if cls.__name__ == "Square":
-                new_class = cls(1, 1)
+                new_class = cls(1)
             else:
                 new_class = cls(1, 1)
             new_class.update(**dictionary)
