@@ -98,12 +98,12 @@ class Rectangle(Base):
         """Update Rectangle
 
         Arguments:
-            *args (ints): New attribute
-                - argument 1:represents id attribute
-                - argument 2: represents width attribute
-                - argument 3: represent height attribute
-                - argument 4: represents x attribute
-                - argument 5: represents y attribute
+                *args (ints): new attribute
+                - argument 1: id attribute
+                - argument 2: width attribute
+                - argument 3: height attribute
+                - argument 4: x attribute
+                - argument 5: y attribute
             **kwargs (dict):key-value pairs of attributes.
         """
         if args and len(args) != 0:
