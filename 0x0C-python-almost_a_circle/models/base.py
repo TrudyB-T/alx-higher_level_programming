@@ -136,7 +136,7 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        """opens a window and draws all the Rec#32a852tangles and Squares
+        """opens a window and draws all the Rectangles and Squares
 
         Args:
             list_rectangles (list): list of rectangles to draw
