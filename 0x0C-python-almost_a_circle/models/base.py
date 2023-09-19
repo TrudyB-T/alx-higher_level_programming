@@ -71,10 +71,10 @@ class Base:
             **dictionary (dict): double pointer to a dictionary
         """
         if dictionary and dictionary != {}:
-            if cls.__name__ == "Rectangle":
-                new_class = cls(1, 1)
-            else:
+            if cls.__name__ == "Square":
                 new_class = cls(1)
+            else:
+                new_class = cls(1, 1)
             new_class.update(**dictionary)
             return new_class
 
@@ -143,11 +143,11 @@ class Base:
             list_squares (list): list of squares to draw
         """
         turt = turtle.Turtle()
-        turt.screen.bgcolor("#b7312c")
+        turt.screen.bgcolor("#32a852")
         turt.pensize(3)
         turt.shape("turtle")
 
-        turt.color("#ffffff")
+        turt.color("#4e32a8")
         for rect in list_rectangles:
             turt.showturtle()
             turt.up()
@@ -160,7 +160,7 @@ class Base:
                 turt.left(90)
             turt.hideturtle()
 
-        turt.color("#b5e3d8")
+        turt.color("#a8a632")
         for sq in list_squares:
             turt.showturtle()
             turt.up()
