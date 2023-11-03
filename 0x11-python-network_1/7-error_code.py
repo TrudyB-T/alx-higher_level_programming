@@ -8,6 +8,6 @@ if __name__ == "__main__":
 
     rep = requests.get(sys.argv[1])
     if rep.status_code >= 400:
-         print(f"Error code: {rep.status_code}")
+        print(f"Error code: {rep.status_code}")
     else:
         print(rep.text)
