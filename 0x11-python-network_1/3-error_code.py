@@ -12,4 +12,4 @@ if __name__ == "__main__":
             info = rep.read()
             print(info.decode('utf-8'))
     except urllib.error.HTTPError as he:
-        print(f"Error: {he.code}")
+        print(f"Error code: {he.code}")
